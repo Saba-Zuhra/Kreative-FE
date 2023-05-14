@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* header {
+  background-color: rgb(59, 42, 42);
+  padding: 1rem; /*because it is responvise and 1 rem is = 16piexel */
+/* }
+header a {
+  color: bisque;
+  font-weight: bold;
+  text-decoration: none;
+} */
+
+main {
+  /* padding: 1rem; */
+  flex: 1;
+  background-color: rgb(252, 244, 235);
+  /* background-color: rgb(255, 255, 128); */
+}
+
+.color-nav {
+  background-color: rgb(59, 42, 42);
+}
+.market-lab {
+  /* font-style: italic; */
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.site-container {
+  min-height: 100vh;
+}
+/*{ add to cart buttone */
+.btn-primary,
+.btn-outline-primary {
+  background-color: rgb(59, 42, 42);
+  color: bisque;
+}
+.rating span {
+  color: gold;
+}
+.img-large {
+  max-width: 100%;
+}
+
+.img-thumbnail {
+  height: 80px;
+}
+
+.btn:hover {
+  background-color: gold;
+  color: rgb(59, 42, 42);
+  font-weight: bold;
+}
+
+.small-container {
+  max-width: 600px;
+}
+
+.checkout-steps > div {
+  border-bottom: 0.2rem solid #a0a0a0;
+  color: #a0a0a0;
+}
+
+.checkout-steps > div.active {
+  border-bottom: 0.2rem solid #f08000;
+  color: #f08000;
+}
+/* //sidebar */
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+.side-navbar {
+  width: 240px;
+  height: 100%;
+  position: absolute;
+  left: -300px; /*invisible */
+  background-color: rgb(59, 42, 42);
+  transition: 0.5s;
+}
+
+.site-container {
+  transition: 0.4s;
+}
+
+.active-cont {
+  margin-left: 240px;
+}
+.active-nav {
+  left: 0; /*visible */
+}
+.products {
+  display: flex;
+  flex-wrap: wrap; /*if no space in a row new item push down in new row */
+  justify-content: center;
+}
+.product {
+  border: 1px crimson solid;
+  margin: 1rem;
+}
+.product img {
+  width: 100%;
+  max-width: 400px;
+}
+.product-info {
+  padding: 1rem;
+}
+
+#categories {
+  color: bisque;
+  text-decoration: none;
+}
